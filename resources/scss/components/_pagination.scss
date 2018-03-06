@@ -1,0 +1,21 @@
+.page-prev {
+  background: #e81000;
+  color: rgb(252,223,43);
+  position: relative;
+  left: 25%;
+  width: 68px;
+}
+.page-prev:disabled {
+  background: #a97e82;
+}
+
+.page-next {
+  background: #e81000;
+  color:rgb(252,223,43);
+  position: relative;
+  left: 68%;
+  width: 68px;
+}
+.page-next:disabled {
+  background: #a97e82;
+}
