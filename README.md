@@ -8,7 +8,7 @@ In this project I tried to implement, from scratch,  a One-Page web application,
 * SASS
 
 ## Description
-The web page is comunicates with the following Star Wars API:
+The web page communicates with the following public Star Wars API:
 ```
 https://swapi.co/
 ```
