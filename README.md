@@ -7,6 +7,8 @@ In this project I tried to implement, from scratch,  a One-Page web application,
 * HTML
 * SASS
 
+***Please, excuse me for the lame styles and the ugly colors - first time working with CSS/SASS.***
+
 ## Description
 The web page communicates with the following public Star Wars API:
 ```
