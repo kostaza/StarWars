@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import store from './AppStore';
 import { AppContainer } from 'react-hot-loader'
 import App from './App';
-import '../resources/scss/style.scss'
+import '../resources/scss/styles.js'
 
 
 const render = Component => {

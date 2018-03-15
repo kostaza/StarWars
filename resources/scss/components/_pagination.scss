@@ -1,21 +1,49 @@
+@font-face {
+  font-family: 'StarWars2';
+  src: url('fonts/STARWARS.woff') format('woff');
+}
+
+button:focus {outline:0;}
+
 .page-prev {
-  background: #e81000;
-  color: rgb(252,223,43);
+  font-family: "OCR A";
+  background: rgb(11, 5, 10);
+  color: rgb(240,229,32);
   position: relative;
   left: 25%;
-  width: 68px;
+  border: 1px solid rgb(61,55,0);
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 .page-prev:disabled {
-  background: #a97e82;
+  background: rgb(49, 49 ,49);
+  color: rgb(100, 100 ,100);
+  border: none;
+}
+
+.page-prev:enabled:hover {
+  background:  rgb(49, 49 ,49);
+  color: white;
+  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
 }
 
 .page-next {
-  background: #e81000;
-  color:rgb(252,223,43);
+  font-family: "OCR A";
+  background: rgb(11, 5, 10);
+  color: rgb(240,229,32);
   position: relative;
-  left: 68%;
-  width: 68px;
+  left: 66%;
+  border: 1px solid rgb(61,55,0);
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 .page-next:disabled {
   background: #a97e82;
+}
+.page-next:enabled:hover {
+  background:  rgb(49, 49 ,49);
+  color: white;
+  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
 }

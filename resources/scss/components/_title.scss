@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'StarWars';
+  src: url('fonts/Starjhol.woff') format('woff');
+}
+
 .page-title {
   position: relative;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'StarWars';
   font-size: 42px;
   line-height: 4;
-  color: rgb(252,223,43);
+  color: rgb(240,229,32);
 }

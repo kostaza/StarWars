@@ -7,7 +7,7 @@ class Characters extends React.Component {
         let { data, planets, planetsAction, characterAction, displayModal, closeModal, currentModal } = this.props;
 
         return (
-            <div>
+            <div className="characters">
                 <div className="page-title">
                     Star Wars Characters
                 </div>
@@ -15,13 +15,13 @@ class Characters extends React.Component {
                     characterAction={characterAction}/></div>
                 {
                     displayModal &&
-                        <Modal show={displayModal} onHide={closeModal}>
-                            <Modal.Header closeButton>
-                                <Modal.Title>{currentModal.name}</Modal.Title>
+                        <Modal className="modal" show={displayModal} onHide={closeModal}>
+                            <Modal.Header className="modal-header">
+                                <Modal.Title className="modal-title">{currentModal.name}</Modal.Title>
                             </Modal.Header>
-                            {this.renderModalBody(currentModal, planets)}
-                            <Modal.Footer>
-                                <button onClick={closeModal}>Close</button>
+                            <Modal.Body className="modal-body">{this.renderModalBody(currentModal, planets)}</Modal.Body>
+                            <Modal.Footer className="modal-footer">
+                                <button className="close-modal" onClick={closeModal}>Close</button>
                             </Modal.Footer>
                         </Modal>
                 }
@@ -35,14 +35,14 @@ class Characters extends React.Component {
             <Modal.Body>
                 <PlanetField name={character.name} planet={planets[character.homeworld].name}/>
                 <SpecieField name={character.name} specie={character.species}/><br/>
-                <p>Additional Information:</p>
-                <p>height: {character.height}</p>
-                <p>mass: {character.mass}</p>
-                <p>hair color: {character.hair_color}</p>
-                <p>skin color: {character.skin_color}</p>
-                <p>eye color: {character.eye_color}</p>
-                <p>birth year: {character.birth_year}</p>
-                <p>gender: {character.gender}</p>
+                <p><u>Additional Information:</u></p>
+                <p>height:  <i>{character.height}</i></p>
+                <p>mass:  <i>{character.mass}</i></p>
+                <p>hair color:  <i>{character.hair_color}</i></p>
+                <p>skin color:  <i>{character.skin_color}</i></p>
+                <p>eye color:  <i>{character.eye_color}</i></p>
+                <p>birth year:  <i>{character.birth_year}</i></p>
+                <p>gender:  <i>{character.gender}</i></p>
             </Modal.Body>
         )
     }
@@ -54,7 +54,7 @@ class PlanetField extends React.Component {
     render () {
         let { name, planet } = this.props;
         return (
-            <p>{name} comes from {planet}</p>
+            <p>{name} comes from <i>{planet}</i></p>
         )
     }
 }
@@ -64,7 +64,7 @@ class SpecieField extends React.Component {
     render () {
         let { name, specie } = this.props;
         return (
-            <p>{name} is {specie}</p>
+            <p>{name} is <i>{specie}</i></p>
         )
     }
 }

@@ -1,19 +1,41 @@
+@font-face {
+  font-family: 'StarWars2';
+  src: url('fonts/STARWARS.woff') format('woff');
+}
+
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
+  font-family: "OCR A", sans-serif;
+  border-collapse: separate;
   width: 50%;
   text-align: center;
   margin: auto;
 }
 
 td, th {
-  border: 1px solid #040067;
   text-align: center;
-  padding: 8px;
-  color: #ffffff;
+  padding: 12px;
 }
 
 th {
-  background-color: #110274;
-  color: #95c6ff;
+  font-weight: lighter;
+  border: 2px solid rgb(11, 5, 10);
+  border-radius: 6px;
+  background-color: rgb(49, 49 ,49);
+  color: white;
+}
+
+td {
+  border: 2px solid transparent;
+  font-family: "OCR A", sans-serif;
+  color: rgb(145, 145, 145);
+}
+
+td > a {
+  color: rgb(145, 145, 145);
+  text-decoration: underline;
+}
+
+th > a {
+  color: white;
+  text-decoration: underline;
 }
