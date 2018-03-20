@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'StarWars2';
+  src: url('fonts/STARWARS.woff') format('woff');
+}
+
+/*.modal {
+  top: 40%;
+  transform: translateY(-50%);
+}*/
+
+.modal-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-family: StarWars2;
+  background: rgb(61,55,0);
+  color: rgb(215, 208, 49);
+}
+
+.modal-body {
+  font-family: "OCR A";
+  background: rgb(11, 5, 10);
+  color: rgb(215, 208, 49);
+}
+
+.modal-footer {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: rgb(61,55,0);
+  color: rgb(215, 208, 49);
+}
+
+.close-modal {
+  background:  rgb(240,229,32);
+  color: #000000;
+  position: relative;
+  border: 1px solid rgb(61,55,0);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.close-modal:hover {
+  background:  rgb(11, 5, 10);
+  color: rgb(240,229,32);
+  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
